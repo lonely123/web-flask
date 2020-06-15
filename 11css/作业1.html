@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>课 10 布局练习</title>
+    <!-- 这是基础的 css 不要改动 -->
+    <style>
+        .gua-header {
+            height: 50px;
+            background: lightsteelblue;
+        }
+        .gua-header:hover {
+            color: #fff;
+            height: 50px;
+            background: #698ebf;
+        }
+        .gua-content {
+            height: 80px;
+            background: lightcoral;
+            width: 50%;
+            /*display: inline-block;*/
+            float: left;
+        }
+        .gua-index {
+            height: 50px;
+            background: lightblue;
+            width: 25%;
+            float: left;
+            /*display: inline-block;*/
+        }
+        .gua-detail {
+            height: 30px;
+            background: lightyellow;
+            width: 25%;
+            float: right;
+            /*display: inline-block;*/
+        }
+        .gua-footer {
+            height: 50px;
+            background: lightseagreen;
+        }
+        .gua-container{
+            width:80%;
+            margin:0 auto;
+        }
+        .clearfix::after{
+            content: "";
+                display: block;
+                clear: both;
+        }
+    </style>
+    <!-- 你的 css 写在这个 style 标签里 -->
+    <style>
+    </style>
+</head>
+<body>
+    <div class="gua-page">
+        <div class="gua-header">
+            header
+        </div>
+        <div class="gua-container clearfix">
+            <div class="gua-index">
+                index
+            </div>
+            <div class="gua-content">
+                content
+            </div>
+            <div class="gua-detail">
+                detail
+            </div>
+        </div>
+        <div class="gua-footer">
+            footer
+        </div>
+    </div>
+</body>
+</html>
+<!--参考的链接-->
+<!--http://jsbin.com/taraqapafo/edit?html,css,output-->
+<!--gua-header gua-footer 不做额外改动-->
+<!--参考上课的板书使用 float 布局实现以下设计-->
+<!--gua-content 占一半宽度-->
+<!--gua-index 在左边占据 25%-->
+<!--gua-detail 在右边占据 25%-->

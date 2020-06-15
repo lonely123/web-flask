@@ -1,0 +1,21 @@
+[
+  {
+    "id": 1,
+    "username": "gua",
+    "password": "123",
+    "role": 1,
+    "updated_time": 1552017639.1728265
+  },
+  {
+    "id": 2,
+    "username": "gua1",
+    "password": "1",
+    "role": 10
+  },
+  {
+    "id": 3,
+    "username": "tao",
+    "password": "123",
+    "role": 10
+  }
+]
